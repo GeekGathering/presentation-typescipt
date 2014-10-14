@@ -1,0 +1,87 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Introduction into TypeScript
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h2 Introduction into
+        h1 <a href="http://www.typescriptlang.org">TypeScript</a>
+        h3 Geek Gathering #6 - 15th October 2014
+
+      section
+        h2 <cite> Large scale JavaScript development is hard</cite>
+
+      section
+        h2 TypeScript
+        ul
+          li
+          li A language for large scaleJavaScript development.
+          li A typed superset of JavaScript that compiles to plain JavaScript.
+
+      section.code-play
+        iframe(src="http://www.typescriptlang.org/Playground#src=var%20aString%20%3D%20%22Hello%20World%22%3B%0A%0Aalert(aString)%3B%0Awindow.close()%3B%0A" width="120%" height="100%" frameBorder="0" scrolling="no" )
+
+
+      section
+        h2 Keyboard Interaction
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+
+      section
+        h2 Touch Interaction
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+
+      section
+        h2 Responsive Slides
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+
+      section
+        h2 Bullet List
+        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        ul
+          li Bullet 1
+          li Bullet 2
+          li Bullet 3
+
+      section(data-bespoke-state="main-title")
+        h2 Syntax Highlighting
+        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+        pre
+          code.language-javascript.
+            bespoke.from('article', [
+              classes(),
+              keys(),
+              touch(),
+              bullets('li, .bullet')
+            ]);
+
+      section(data-bespoke-hash='named-route')
+        h2 Named Route
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Emphatic Slide!
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+
+      section
+        h2.bullet Just the beginning...
+        br
+        ul
+          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
+          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
+          li Edit JavaScript in <em>'src/scripts/main.js'</em>
+        br
+        ul
+          li
+            strong Enjoy! :)
+            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+
+    script(src='build/build.js')

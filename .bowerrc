@@ -1,0 +1,4 @@
+{
+    "directory": "bower_components",
+	"https-proxy":"http://11public:phonak@proxy.ch11.emea.corp.ads:8080"
+}
