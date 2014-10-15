@@ -56,7 +56,10 @@ html
         iframe(src="http://repl.it/1YB/1" scrolling="no")
 
       section.code-play
-        iframe(src="http://www.typescriptlang.org/Playground#src=" scrolling="no")
+        iframe(src="http://www.typescriptlang.org/Playground#src=var%20aNumber%20%3D%204%3B%0Avar%20aNumberArray%20%3D%20%5B%201%2C%202%20%2C%203%20%5D%3B%0A" scrolling="no")
+
+      section.code-play
+        iframe(src="http://www.typescriptlang.org/Playground#src=%2F%2F%20Basic%20Types%0Avar%20aBoolean%20%3Aboolean%20%3D%20false%3B%0Avar%20aNumber%20%3Anumber%20%3D%206%3B%0Avar%20aString%20%3Astring%20%3D%20%22bob%22%3B%0A%0Avar%20aNumberArray%20%3Anumber%5B%5D%20%3D%20%5B1%2C%202%2C%203%5D%3B%0Avar%20anotherNumberArray%20%3AArray%3Cnumber%3E%20%3D%20%5B1%2C%202%2C%203%5D%3B%0A%0Aenum%20Color%20%7BRed%2C%20Green%2C%20Blue%7D%3B%0Avar%20aColor%20%3AColor%20%3D%20Color.Green%3B%0A%0A%2F%2F%20any%0Avar%20notSure%3A%20any%20%3D%204%3B%0AnotSure%20%3D%20%22maybe%20a%20string%20instead%22%3B%0AnotSure%20%3D%20false%3B%20%2F%2F%20okay%2C%20definitely%20a%20boolean%0A%0A%2F%2F%20void%0Afunction%20warnUser()%3A%20void%20%7B%0A%20%20%20%20alert(%22This%20is%20my%20warning%20message%22)%3B%0A%7D%0A%0A" scrolling="no")
 
       section
         h2 Classes
@@ -68,7 +71,7 @@ html
         h2 Interface
 
       section.code-play
-        iframe(src="http://www.typescriptlang.org/Playground#src=" scrolling="no")
+        iframe(src="http://www.typescriptlang.org/Playground#src=enum%20Gender%20%7B%20Female%2C%20Male%7D%0A%0Aclass%20Person%20%7B%0A%20%20%20%20firstname%3A%20string%3B%0A%20%20%20%20lastname%3A%20string%3B%0A%20%20%20%20gender%3A%20Gender%3B%20%20%20%20%0A%7D%0A%0Aclass%20Greeter%20%7B%0A%20%20%20%20constructor%20(public%20greeting%3A%20string)%20%7B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%7D%0A%0A%20%20%20%20greet(person%3A%20Person)%20%7B%0A%20%20%20%20%20%20%20%20alert(this.greeting%20%2B%20%22%20%22%20%2B%20person.firstname%20%2B%20%22%20%22%20%2B%20person.lastname)%3B%0A%20%20%20%20%7D%0A%0A%7D%20%0A%0Aclass%20FormalGreeter%20extends%20Greeter%20%7B%0A%20%20%20%20greet(person%3A%20Person)%20%7B%20%20%20%20%0A%20%20%20%20%20%20%20%20alert(this.greeting%20%2B%20%22%20%22%20%0A%09%09%2B%20((person.gender%20%3D%3D%20Gender.Male)%20%3F%20%22Mr.%22%20%3A%20%22Mrs.%22)%20%0A%09%09%2B%20%20%2B%20person.lastname)%3B%0A%20%20%20%20%7D%0A%7D%0A%0Aclass%20InFormalGreeter%20extends%20Greeter%20%7B%0A%20%20%20%20greet(person%3A%20Person)%20%7B%0A%20%20%20%20%20%20%20%20alert(this.greeting%20%2B%20%22%20%22%20%2B%20person.firstname)%3B%0A%20%20%20%20%7D%0A%7D%0A%0Avar%20greeter%20%3D%20new%20FormalGreeter(%22Hello%22)%3B%0Agreeter.greet(%7B%20firstname%3A%20%22Franz%22%2C%20lastname%3A%20%22Schnyder%22%2C%20gender%3A%20Gender.Male%20%7D)%3B%0A%0A%0A" scrolling="no")
 
       section
         h2.bullet Modules
