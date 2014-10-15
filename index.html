@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Introduction into TypeScript</title>
     <link rel="stylesheet" type="text/css" href="build/build.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   </head>
   <body>
     <article>
@@ -14,70 +15,73 @@
         <h3>Geek Gathering #6 - 15th October 2014</h3>
       </section>
       <section>
-        <h2><cite> Large scale JavaScript development is hard</cite></h2>
+        <h1 class="bullet">WHY ?</h1>
+        <h3 class="bullet"><img src="https://imagery.pragprog.com/products/59/tpp_xlargecover.jpg?1339433898" align="middle" height="50"><span>&nbsp; &nbsp; Learn a new language every year <a href="https://pragprog.com/the-pragmatic-programmer"><i class="fa fa-external-link"></i></a></span></h3>
+        <h3 class="bullet"><img src="https://pbs.twimg.com/profile_images/66432812/eg2_400x400.gif" height="50" align="middle"><span>&nbsp; &nbsp; Surviving Application Scale JavaScript - TypeScript in the Trenches <a href="http://channel9.msdn.com/Events/Build/2014/3-583"><i class="fa fa-external-link"></i></a></span></h3>
       </section>
       <section>
-        <h2>TypeScript</h2>
-        <ul>
-          <li></li>
-          <li>A language for large scaleJavaScript development.</li>
-          <li>A typed superset of JavaScript that compiles to plain JavaScript.</li>
-        </ul>
+        <p><img src="https://pbs.twimg.com/profile_images/66432812/eg2_400x400.gif" height="42">
+          <cite>&nbsp;Surviving Application Scale JavaScript</cite>
+        </p><img src="images/Gamma_1.png" height="80%">
+      </section>
+      <section>
+        <p><img src="https://pbs.twimg.com/profile_images/66432812/eg2_400x400.gif" height="42">
+          <cite>&nbsp;Surviving Application Scale JavaScript</cite>
+        </p><img src="images/Gamma_2.png" height="80%">
+      </section>
+      <section>
+        <p><img src="https://pbs.twimg.com/profile_images/66432812/eg2_400x400.gif" height="42">
+          <cite>&nbsp;Surviving Application Scale JavaScript</cite>
+        </p><img src="images/Gamma_3.png" height="80%">
+      </section>
+      <section>
+        <h1><a href="http://www.typescriptlang.org">TypeScript</a></h1>
+        <h3 class="bullet"><i>TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.</i></h3>
+        <h3 class="bullet">Any browser. Any host. Any OS. Open Source.</h3>
+      </section>
+      <section>
+        <h2>Static typing and type inference</h2>
       </section>
       <section class="code-play">
-        <iframe src="http://www.typescriptlang.org/Playground#src=var%20aString%20%3D%20%22Hello%20World%22%3B%0A%0Aalert(aString)%3B%0Awindow.close()%3B%0A" width="120%" height="100%" frameBorder="0" scrolling="no"></iframe>
+        <iframe src="http://repl.it/1YB/1" scrolling="no"></iframe>
+      </section>
+      <section class="code-play">
+        <iframe src="http://www.typescriptlang.org/Playground#src=" scrolling="no"></iframe>
       </section>
       <section>
-        <h2>Keyboard Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a></h3>
+        <h2>Classes</h2>
+      </section>
+      <section class="code-play">
+        <iframe src="http://www.typescriptlang.org/Playground#src=class%20Greeter%20%7B%0A%20%20%20%0A%7D%0A%0Avar%20greeter%20%3D%20new%20Greeter()%3B%0A" scrolling="no"></iframe>
       </section>
       <section>
-        <h2>Touch Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
+        <h2>Interface</h2>
+      </section>
+      <section class="code-play">
+        <iframe src="http://www.typescriptlang.org/Playground#src=" scrolling="no"></iframe>
       </section>
       <section>
-        <h2>Responsive Slides</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
+        <h2 class="bullet">Modules</h2>
+        <h3 class="bullet">internal and external</h3>
       </section>
       <section>
-        <h2>Bullet List</h2>
-        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
-        <ul>
-          <li>Bullet 1</li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
-        </ul>
+        <h2>Internal Modules</h2>
       </section>
-      <section data-bespoke-state="main-title">
-        <h2>Syntax Highlighting</h2>
-        <h3>Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a></h3>
-        <pre><code class="language-javascript">bespoke.from('article', [
-  classes(),
-  keys(),
-  touch(),
-  bullets('li, .bullet')
-]);
-</code></pre>
+      <section><img src="images/VisualStudio-4096.png" height="100%"></section>
+      <section>
+        <h2>External Modules</h2>
       </section>
-      <section data-bespoke-hash="named-route">
-        <h2>Named Route</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
-        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
-      </section>
-      <section data-bespoke-backdrop="emphatic" class="emphatic-text">
-        <h2>Emphatic Slide!</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a></h3>
+      <section><img src="images/VisualStudio-4096.png" height="100%"></section>
+      <section>
+        <h1><i class="fa fa-comments bullet"></i> <i class="fa fa-question-circle bullet"></i> <i class="fa fa-thumbs-up bullet"></i> <i class="fa fa-thumbs-down bullet"></i></h1>
       </section>
       <section>
-        <h2 class="bullet">Just the beginning...</h2><br>
-        <ul>
-          <li>Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em></li>
-          <li>Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em></li>
-          <li>Edit JavaScript in <em>'src/scripts/main.js'</em></li>
-        </ul><br>
-        <ul>
-          <li><strong>Enjoy! :)</strong><a href="http://twitter.com/markdalgleish"> -@markdalgleish</a></li>
-        </ul>
+        <h2><i class="fa fa-external-link"></i></h2>
+        <h3></h3>
+        <h3><a href="https://github.com/bittailor"><img src="https://avatars2.githubusercontent.com/u/575221?v=2&amp;s=120" height="22px" class="avatar"></a><span>on <i class="fa fa-github"></i></span></h3>
+        <h3><a href="http://geekgathering.github.io/presentation-typescipt" target=>Presentation</a> hosted on <i class="fa fa-github"></i></h3>
+        <h3><a href="http://markdalgleish.com/projects/bespoke.js">Bespoke.js</a> presentation <a href="https://github.com/GeekGathering/presentation-typescipt">source code</a> on <i class="fa fa-github"></i></h3>
+        <h3>VisualStudio solution <a href="?">source code</a> on <i class="fa fa-github"></i></h3>
       </section>
     </article>
     <script src="build/build.js"></script>
