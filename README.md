@@ -1,6 +1,10 @@
 # Introduction into TypeScript
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
+## View slides online
+
+ http://geekgathering.github.io/presentation-typescipt
+
 ## View slides locally
 
 First, ensure you have the following installed:
